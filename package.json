@@ -1,0 +1,25 @@
+{
+  "name": "htmldenormalizer",
+  "version": "1.0.0",
+  "description": "transforms normalized html to regular html",
+  "main": "HTMLDenormalizer.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Plato-solutions/HTMLDenormalizer.git"
+  },
+  "keywords": [
+    "etl",
+    "html",
+    "normalizer",
+    "denormalizer"
+  ],
+  "author": "Emmanuel Nkrumah Sarpong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plato-solutions/HTMLDenormalizer/issues"
+  },
+  "homepage": "https://github.com/Plato-solutions/HTMLDenormalizer#readme"
+}
