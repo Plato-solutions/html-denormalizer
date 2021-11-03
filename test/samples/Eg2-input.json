@@ -1,0 +1,102 @@
+[
+    {
+        "type": "Section",
+        "tags": null,
+        "children":
+        [
+            {
+                "type": "Table",
+                "tags": null,
+                "content":
+                [
+                    [
+                        {
+                            "type": "Header",
+                            "content":
+                            [
+                                {
+                                    "type": "Section",
+                                    "tags": null,
+                                    "children":
+                                    [
+                                        {
+                                            "type": "Text",
+                                            "tags": null,
+                                            "content": "Table Header 1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Header",
+                            "content":
+                            [
+                                {
+                                    "type": "Section",
+                                    "tags": null,
+                                    "children":
+                                    [
+                                        {
+                                            "type": "Text",
+                                            "tags": null,
+                                            "content": "Table Header 2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "Data",
+                            "content":
+                            [
+                                {
+                                    "type": "Section",
+                                    "tags": null,
+                                    "children":
+                                    [
+                                        {
+                                            "type": "Text",
+                                            "tags": null,
+                                            "content": "Lorem ipsum dolor sit amet"
+                                        },
+                                        {
+                                            "type": "Title",
+                                            "tags": null,
+                                            "content": "Complex Title"
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "tags": null,
+                                            "content": "Lorem ipsum dolor sit amet"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Data",
+                            "content":
+                            [
+                                {
+                                    "type": "Section",
+                                    "tags": null,
+                                    "children":
+                                    [
+                                        {
+                                            "type": "Text",
+                                            "tags": null,
+                                            "content": "Lorem ipsum dolor sit amet"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+]
