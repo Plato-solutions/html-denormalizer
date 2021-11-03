@@ -1,0 +1,1 @@
+module.exports.denormalize = require('./src/HTMLDenormalizer');

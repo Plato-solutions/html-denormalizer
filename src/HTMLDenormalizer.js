@@ -1,4 +1,4 @@
-function denormalize(inputed) {
+function denormalize(inputed) {    
     // convert to javascript object
     const inputObject = JSON.parse(inputed)
 
@@ -36,21 +36,25 @@ function typeRouter(objectType) {
     }
 }
 
+// denormalize p
 function handleText(inputObject) {
     // turn textObject into an <p> html element
     return "<p>" + inputObject.content + "</p>"
 }
 
+// denormalize h
 function handleTitle(inputObject) {
     // turn textObject into an <p> html element
     return "<h1>" + inputObject.content + "</h1>"
 }
 
+// denormalize imgs
 function handleImage(inputObject) {
     // turn textObject into an <p> html element
     return '<img src="' + inputObject.content + '"/>'
 }
 
+// denormalize divs
 function handleSection(inputObject) {
     sectionResponse = `<div>`
 
@@ -64,9 +68,12 @@ function handleSection(inputObject) {
 
 }
 
+// denormalize tables
 function handleTable(inputObject) {
     var tableResponse = `<table>`
 
+    // for each row, check if it is a header. if it is, return content in a th tag
+    // else normalize content and return in a td tag
     inputObject.content.forEach(part => {
         tableResponse += `<tr>`
 
@@ -97,9 +104,11 @@ function handleTable(inputObject) {
     return tableResponse
 }
 
+// denormalize ul and ol
 function handleList(inputObject) {
     var listResponse = ""
 
+    // ul or ol tag
     if (inputObject.list_type === "Unordered") {
         listResponse = "<ul>"
         closingTag = "</ul>"
@@ -110,16 +119,17 @@ function handleList(inputObject) {
         return "<null/>"
     }
 
+
     inputObject.content.forEach(item => {
         listResponse += "<li>"
 
+        // if type is text, don't normalize into <p>.
         if (item.content[0].children[0].type === "Text") {
             listResponse += item.content[0].children[0].content
         } else {
-            // item.content[0].children.forEach(child => listResponse += process(child))   
+            // otherwise just normalize like everything else
             listResponse += process(item.content[0])
         }
-        // listResponse += (item.content[0].children[0].type === "Text") ? item.content[0].children[0].content : item.content[0].children.forEach(child => process(child))
         listResponse += "</li>"
     })
 
@@ -127,11 +137,7 @@ function handleList(inputObject) {
     return listResponse
 }
 
-
+// TODO: better error handling
 function handleNotFound(content) {
     return "<p>invalid object</p>"
 }
-
-
-
-module.exports.denormalize = denormalize;
