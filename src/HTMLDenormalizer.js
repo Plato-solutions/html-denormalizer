@@ -141,3 +141,5 @@ function handleList(inputObject) {
 function handleNotFound(content) {
     return "<p>invalid object</p>"
 }
+
+module.exports.denormalize = denormalize;
