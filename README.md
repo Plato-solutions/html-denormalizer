@@ -3,21 +3,26 @@
 Transform HTML that has been normalized to JSON back to HTML.
 
 ## Install
----
+
 Using NPM:
-``
+```bash
+npm i plato-analytics/html-denormalizer
+```
 
-## Basic usage
----
-### Import
-#### Node.js/CommonJS:
-`const denormalize = require('html-denormalizer').denormalize`
+## Import
 
-#### ES6
-`import { denormalize } from "html-denormalizer";
-`
+### Node.js/CommonJS:
+```javascript
+const denormalize = require('html-denormalizer').denormalize
 
-### Usage
+```
+
+### ES6
+```javascript
+import { denormalize } from "html-denormalizer";
+```
+
+## Usage
 ```javascript
 jsonString = "{}" // some json string here
 htmlString = denormalize(jsonString) // returns an html string
