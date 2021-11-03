@@ -1,4 +1,4 @@
-# html-denormalizer
+# foundry-html-denormalizer
 
 Transform HTML that has been normalized to JSON back to HTML.
 
@@ -6,7 +6,7 @@ Transform HTML that has been normalized to JSON back to HTML.
 
 Using NPM:
 ```bash
-npm i plato-analytics/html-denormalizer
+npm i @plato-analytics/foundry-html-denormalizer
 ```
 
 ## Import
