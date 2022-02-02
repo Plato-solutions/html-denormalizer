@@ -1,11 +1,11 @@
 # html-denormalizer
 
-Transform HTML that has been normalized to JSON back to HTML.
+Transforms JSON to HTML.
 
 ## Install
 ---
 Using NPM:
-``
+`npm install --save https://github.com/Plato-solutions/html-denormalizer`
 
 ## Basic usage
 ---
