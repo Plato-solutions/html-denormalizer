@@ -1,30 +1,36 @@
 # foundry-html-denormalizer
 
-Transform HTML that has been normalized to JSON back to HTML.
+Transforms JSON to HTML.
 
 ## Install
 
 Using NPM:
+
 ```bash
 npm i @plato-analytics/foundry-html-denormalizer
 ```
 
-## Import
+Alternatively,
+
+```bash
+npm install --save https://github.com/Plato-solutions/html-denormalizer
+```
 
 ### Node.js/CommonJS:
-```javascript
-const denormalize = require('html-denormalizer').denormalize
 
+```javascript
+const denormalize = require("html-denormalizer").denormalize;
 ```
 
 ### ES6
+
 ```javascript
 import { denormalize } from "html-denormalizer";
 ```
 
 ## Usage
-```javascript
-jsonString = "{}" // some json string here
-htmlString = denormalize(jsonString) // returns an html string
 
+```javascript
+jsonString = "{}"; // some json string here
+htmlString = denormalize(jsonString); // returns an html string
 ```
