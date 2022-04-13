@@ -5,12 +5,9 @@ const { denormalize } = require("..")
 
 describe('Basic Elements', function () {
 
-    it('returns invalid object if object is invalid', function () {
+    it('throws inputed is an invalid object if object invalid', function () {
         const inputed = '{"type": "xxx", "tags": null, "content": "Lorem ipsum dolor sit amet"}'
-        const expected = "<p>invalid object</p>"
-
-        expect(denormalize(inputed)).equal(expected)
-
+        expect(() => denormalize(inputed)).to.throw(Error);
     })
 
     it('Texts can be denormalized', function () {
