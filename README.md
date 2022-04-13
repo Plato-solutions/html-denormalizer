@@ -4,14 +4,6 @@ Transforms JSON to HTML.
 
 ## Install
 
-Using NPM:
-
-```bash
-npm i @plato-analytics/foundry-html-denormalizer
-```
-
-Alternatively,
-
 ```bash
 npm install --save https://github.com/Plato-solutions/html-denormalizer
 ```
