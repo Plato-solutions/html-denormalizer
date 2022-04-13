@@ -1,4 +1,4 @@
-function denormalize(inputed) {    
+function denormalize(inputed) {
     // convert to javascript object
     const inputObject = JSON.parse(inputed)
 
@@ -137,9 +137,8 @@ function handleList(inputObject) {
     return listResponse
 }
 
-// TODO: better error handling
 function handleNotFound(content) {
-    return "<p>invalid object</p>"
+    throw new Error(JSON.stringify(content) + " is an invalid object");
 }
 
 module.exports.denormalize = denormalize;

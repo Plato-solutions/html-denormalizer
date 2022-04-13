@@ -4,7 +4,8 @@
   "description": "transforms normalized html to regular html",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-live": "mocha --watch"
   },
   "repository": {
     "type": "git",
